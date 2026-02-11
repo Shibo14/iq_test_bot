@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: iq_test_bot
+    env: python
+    plan: free
+    pythonVersion: 3.12.3
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
