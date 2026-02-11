@@ -12,7 +12,7 @@ from questions.game import questions_game
 from utils.skills import calculate_iq, detect_skills
 from utils.poll_sender import send_quiz_poll
 
-BOT_TOKEN = "7946946712:AAFs4T4gJTwQZ2WyBNluaFFrwxyDzpYHuF0"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 bot = Bot(BOT_TOKEN)
 dp = Dispatcher()
@@ -147,3 +147,4 @@ async def finish_test(chat_id, user_id):
 
 print("bot Start")
 asyncio.run(dp.start_polling(bot))
+
