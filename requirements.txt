@@ -1,2 +1,7 @@
-aiogram==3.2.0
-python-dotenv
+aiogram==3.4.1
+python-dotenv==1.0.1
+aiohttp==3.9.3
+pydantic==2.5.3
+pydantic-core==2.14.6
+magic-filter==1.0.12
+typing_extensions==4.10.0
